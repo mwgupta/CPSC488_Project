@@ -8,8 +8,14 @@ Data:
 From https://drive.google.com/drive/folders/1T6B4nou5P3u-6jr0z6e3IkitO8fNVM6f, download medqa_usmle_model.pt (for GreaseLM's model) and data_preprocessed_biomed.zip, which should both be placed within the same top level of this folder.
 
 Computing Environment:
+Log onto a cluster (I used Grace). Git clone repo.
+Requires 1 GPU, with 32G memory. Takes around 7-8 hours to train.
 ```
-
+salloc --partition=gpu_devel --time=7:00:00 --mem=32G -c4 --gpus=rtx5000
+module load miniconda
+conda activate greaselm
+ml CUDA/10.1.243 GCC/12.2.0
+cd CPSC488_Project
 ```
 
 Frameworks and Packages:
