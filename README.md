@@ -7,7 +7,7 @@ Data:
 
 From https://drive.google.com/drive/folders/1T6B4nou5P3u-6jr0z6e3IkitO8fNVM6f, download medqa_usmle_model.pt (for GreaseLM's model) and data_preprocessed_biomed.zip, which should both be placed within the same top level of this folder.
 
-Computing Environment:
+Computing Environment and How to Run:
 Log onto a cluster (I used Grace). Git clone repo.
 Requires 1 GPU, with 32G memory. Takes around 7-8 hours to train.
 ```
@@ -41,7 +41,5 @@ Python == 3.8
 PyTorch == 1.8.0
 transformers == 3.4.0
 torch-geometric == 1.7.0
-
-How to run:
 
 
